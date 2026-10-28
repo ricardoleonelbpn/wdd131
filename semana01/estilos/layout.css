@@ -1,0 +1,23 @@
+body.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.asidebar,
+.ads {
+    flex-basis: 100px;
+}
+
+.main {
+    flex: 1;
+}
+
+.sidebar {
+    order: -1;
+}
