@@ -20,11 +20,6 @@ h1 {
     margin: 20px 0;
 }
 
-footer {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-}
-
 span, header {
     border: 0;
     margin: 10px;
@@ -32,6 +27,11 @@ span, header {
     text-align: center;
 	padding: 0.5rem;
     font-family: Roboto, Helvetica, sans-serif;
+}
+
+main {
+    margin: 0;
+    padding: 0;
 }
 
 span {
@@ -127,10 +127,6 @@ section {
 .sao-paulo p {
     flex: 1;
     line-height: 1.5;
-}
-
-.card h2 {
-    text-align: center;
 }
 
 /* Ajuste para celulares */
