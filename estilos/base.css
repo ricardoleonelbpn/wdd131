@@ -1,0 +1,176 @@
+head title {
+    display: block;
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    
+
+}
+
+h1, h2, h3 {
+    font-family: "PlayFair", serif;
+    font-weight: 100;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+span, header {
+    border: 0;
+    margin: 10px;
+    display: block;
+    text-align: center;
+	padding: 0.5rem;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+span {
+    background-color: #1D4D72;
+    color: #C8D4DD;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+header {
+    color: #C8D4DD;
+    margin: 0;
+
+}
+
+.menu_principal {
+    margin: 0;
+    list-style: none;
+	display: flex;
+	align-items: center;
+    border: 0;
+}
+
+
+.menu_principal ul, li {
+    flex: 1 1 500px;
+    justify-content:center;
+    background-color: #333333;
+}
+
+.menu_principal a {
+    display: block;
+	color: #C8D4DD;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center
+}
+
+.menu_principal a:hover {
+    text-decoration: underline;
+    text-decoration-color: blue;
+
+}
+
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.coluna-esquerda,
+.coluna-direita {
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna-esquerda h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.perfil,
+.sao-paulo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.perfil img {
+    width: 180px;
+    height: auto;
+}
+
+.sao-paulo img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.perfil p,
+.sao-paulo p {
+    flex: 1;
+    line-height: 1.5;
+}
+
+.coluna-direita h2 {
+    text-align: center;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 700px) {
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        margin: 0 14px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .perfil,
+    .sao-paulo {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+h2 {
+    background-color: #1D4D72;
+    color: #C8D4DD;
+}
+
+.coluna-direita nav ul li {
+    background-color: #F9F9F9;
+    margin: 0;
+}
+
+footer {
+    background-color: #205477;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
