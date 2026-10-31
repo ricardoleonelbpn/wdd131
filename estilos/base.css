@@ -93,13 +93,13 @@ section {
     background-color: #f9f9f9;
 }
 
-.coluna-esquerda,
-.coluna-direita {
+.card,
+.card {
     display: flex;
     flex-direction: column;
 }
 
-.coluna-esquerda h2 {
+.card h2 {
     text-align: center;
     margin-bottom: 25px;
 }
@@ -129,7 +129,7 @@ section {
     line-height: 1.5;
 }
 
-.coluna-direita h2 {
+.card h2 {
     text-align: center;
 }
 
@@ -157,7 +157,7 @@ h2 {
     color: #C8D4DD;
 }
 
-.coluna-direita nav ul li {
+.card ul li {
     background-color: #F9F9F9;
     margin: 0;
 }
