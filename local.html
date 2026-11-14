@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Atividade prática de página web responsiva, com JavaScript realizando eventos de forma dinâmica">
+    <meta name="author" content="Ricardo Leonel">
+    <title>WDD 131 - Página do País</title>
+
+    <link rel="stylesheet" href="estilos/local.css">
+    <script src="scripts/local.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header><h1>Rio de Janeiro, Brasil</h1></header>
+    
+    <main>
+        
+        <div class="destaque">
+            
+            <picture>
+                <source media="(min-width: 700px)" srcset="imagens/rio-grande.webp">
+                <img src="imagens/rio-pequeno.webp" alt="Vista panorâmica do Rio de Janeiro">
+            </picture>
+        
+            <div class="conteudo">
+                <section class="informacoes">
+                    <h2>Informações Gerais</h2>
+                    <ul>
+                        <li><strong>País:</strong> Brasil</li>
+                        <li><strong>Estado: </strong>Rio de Janeiro</li>
+                        <li><strong>Capital estadual: </strong>Rio de Janeiro</li>
+                        <li><strong>Idioma: </strong>Português</li>
+                        <li><strong>Moeda: </strong>Real (BRL)</li>
+                        <li><strong>População: </strong>6.731.133</li>
+                    </ul>
+                </section>
+                <section class="clima">
+                    <img class="icone-clima" src="imagens/icone-sol.svg" alt="um icone de um sol sobre as nuvens">
+                    <h2>Clima</h2>
+                    <p><strong>Temperatura:</strong> 28 °C</p>
+                    <p><strong>Condição:</strong> Parcialmente nublado</p>
+                    <p><strong>Velocidade do vento:</strong> 12 km/h</p>
+                    <p><strong>Sensação térmica:</strong> <span id="sensacaoTermica"></span></p>
+                </section>
+            </div>
+        </div>  
+    
+    </main>
+
+    <footer>
+        <p>
+            © <span id="anoatual"></span> 🍀 Ricardo Leonel 🍀 São Paulo
+        </p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+
+</body>
+</html>
