@@ -26,6 +26,13 @@ function calcularSensacaoTermica(temperatura, velocidadeVento) {
 const temperatura = 28;
 const velocidadeVento = 12;
 
-const resultado = calcularSensacaoTermica(temperatura, velocidadeVento);
+const elementoSensacao = document.getElementById("sensacaoTermica");
 
-document.getElementById("sensacaoTermica").textContent = resultado;
+// Valor padrão
+elementoSensacao.textContent = "N/A";
+
+// Só chama a função se as condições forem atendidas
+if (temperatura <= 10 && velocidadeVento > 4.8) {
+    elementoSensacao.textContent =
+        calcularSensacaoTermica(temperatura, velocidadeVento);
+}
