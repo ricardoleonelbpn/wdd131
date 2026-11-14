@@ -51,6 +51,10 @@ section {
     align-self: start;
 }
 
+.informacoes li {
+    margin-bottom: 0.5rem;
+}
+
 .clima {
     grid-column: 2;
     grid-row: 1;
@@ -100,10 +104,8 @@ section {
 
 .icone-clima {
     display: none;
-}
-
-.icone-clima {
-    display: none;
+    width: 60px;
+    height: 60px;
 }
 
 @media (max-width: 600px) {
