@@ -13,6 +13,16 @@ document.getElementById("ultimaModificacao").textContent =
 
 const container = document.querySelector('.res-grid');
 
+const botaoMenu = document.querySelector("#menu");
+const navegacao = document.querySelector(".navigation");
+
+botaoMenu.addEventListener("click", () => {
+
+    navegacao.classList.toggle("open");
+    botaoMenu.classList.toggle("open");
+
+});
+
 const templos = [
   {
     nomeDoTemplo: "Aba Nigeria",
