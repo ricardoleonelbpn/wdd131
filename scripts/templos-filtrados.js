@@ -126,7 +126,7 @@ function createTempleCards(templos) {
 
     templos.forEach(templo => {
         let card = document.createElement("section");
-        let nomeDoTemplo = document.createElement("h3");
+        let nomeDoTemplo = document.createElement("h2");
         let localizacao = document.createElement("p");
         let consagracao = document.createElement("p");
         let area = document.createElement("p");
@@ -139,6 +139,9 @@ function createTempleCards(templos) {
         img.setAttribute("src", templo.urlDaImagem);
         img.setAttribute("alt", `Templo ${templo.nomeDoTemplo}`);
         img.setAttribute("loading", "lazy");
+
+        img.setAttribute("width", "400");
+        img.setAttribute("height", "250");
 
         card.appendChild(nomeDoTemplo);
         card.appendChild(localizacao);
