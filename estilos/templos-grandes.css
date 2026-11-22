@@ -10,9 +10,8 @@
         gap: 20px;
     }
 
-    img {
-        gap: 20px;
-        padding: 20px;
+    .res-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 
 }
