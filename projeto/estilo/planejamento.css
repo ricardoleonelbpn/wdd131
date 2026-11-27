@@ -26,6 +26,23 @@ header {
     padding: 25px;
 }
 
+.logo {
+    background-color: var(--cor-escura);
+    color: var(--cor-principal);
+    text-align: left;
+    padding: 15px 30px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.logo p {
+    color: var(--cor-branca);
+    font-size: 16px;
+    margin: 0;
+    font-weight: normal;
+}
+
 main {
     max-width: 1000px;
     margin: 0 auto;
@@ -89,6 +106,10 @@ footer {
     color: var(--cor-branca);
     text-align: center;
     padding: 20px;
+}
+
+footer p {
+    color: var(--cor-branca);
 }
 
 @media screen and (min-width: 768px) {
