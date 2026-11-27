@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de avaliação de produtos.">
+    <meta name="author" content="Ricardo Leonel">
+    <title>WDD 131 | Avaliação de Produto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/formulario.css">
+    <script src="scripts/formulario.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Avaliação de Produto</h1>
+    </header>
+
+    <main>
+        <form action="avaliacao.html" method="get">
+
+            <label for="produto">Nome do Produto</label>
+            <select id="produto" name="produto" required>
+                <option value="" disabled selected>Selecione um Produto...</option>
+            </select>
+
+            <fieldset>
+                <legend>Classificação Geral</legend>
+                <p class="orientacao">Selecione uma classificação de 1 a 5 estrelas.</p>
+
+                <div class="estrelas">
+                    <div>
+                        <input type="radio" id="estrela1" name="classificacao" value="1" required>
+                        <label for="estrela1">☆</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="estrela2" name="classificacao" value="2">
+                        <label for="estrela2">☆☆</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="estrela3" name="classificacao" value="3">
+                        <label for="estrela3">☆☆☆</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="estrela4" name="classificacao" value="4">
+                        <label for="estrela4">☆☆☆☆</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="estrela5" name="classificacao" value="5">
+                        <label for="estrela5">☆☆☆☆☆</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <label for="data">Data de Instalação</label>
+            <input type="date" id="data" name="data" required>
+
+            <fieldset>
+                <legend>Recursos Úteis</legend>
+                <p class="orientacao">Selecione todos os recursos que você achou úteis.</p>
+
+                <div class="opcao">
+                    <input type="checkbox" id="facilidade" name="recursos" value="Facilidade de uso">
+                    <label for="facilidade">Facilidade de uso</label>
+                </div>
+
+                <div class="opcao">
+                    <input type="checkbox" id="desempenho" name="recursos" value="Desempenho">
+                    <label for="desempenho">Desempenho</label>
+                </div>
+
+                <div class="opcao">
+                    <input type="checkbox" id="design" name="recursos" value="Design">
+                    <label for="design">Design</label>
+                </div>
+
+                <div class="opcao">
+                    <input type="checkbox" id="durabilidade" name="recursos" value="Durabilidade">
+                    <label for="durabilidade">Durabilidade</label>
+                </div>
+            </fieldset>
+
+            <label for="comentario">Avaliação Escrita <span>(opcional)</span></label>
+            <textarea id="comentario" name="comentario" rows="5"
+                placeholder="Escreva sua opinião sobre o produto..."></textarea>
+
+            <label for="usuario">Nome de Usuário <span>(opcional)</span></label>
+            <input type="text" id="usuario" name="usuario"
+                placeholder="Digite seu nome">
+
+            <input type="submit" value="Enviar Avaliação">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="ano"></span> | Ricardo Leonel | WDD 131</p>
+        <p>São Paulo, Brasil</p>
+    </footer>
+</body>
+</html>
