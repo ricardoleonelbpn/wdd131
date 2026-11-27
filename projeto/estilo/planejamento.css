@@ -1,0 +1,102 @@
+
+/* Configurações gerais */
+:root {
+    --cor-principal: #024674;
+    --cor-escura: #013352;
+    --cor-branca: #FFFFFF;
+    --cor-cinza: #F3F6F8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: var(--cor-cinza);
+    color: var(--cor-escura);
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--cor-escura);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: var(--cor-branca);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    color: var(--cor-principal);
+}
+
+h2 {
+    border-bottom: 2px solid var(--cor-principal);
+    padding-bottom: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #D0D7DE;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+}
+
+tr:nth-child(even) {
+    background-color: var(--cor-cinza);
+}
+
+.mobile {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.desktop {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+}
+
+footer {
+    background-color: var(--cor-escura);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        padding: 30px;
+    }
+
+    section {
+        padding: 25px;
+    }
+}
